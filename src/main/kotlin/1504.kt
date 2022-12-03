@@ -38,13 +38,13 @@ fun main() {
         }
     }
     dijkstra(1)
-    var di1_v1 = distance[mid1]
-    var di1_v2 = distance[mid2]
+    var di1_v1 = distance[mid1] // 1에서 v1까지
+    var di1_v2 = distance[mid2] // 1에서 v2까지
     dijkstra(mid1)
-    var div1_v2 = distance[mid2]
-    var div1_m = distance[m]
+    var div1_v2 = distance[mid2] //v1에서 v2까지
+    var div1_m = distance[m] //v1에서 m까지
     dijkstra(mid2)
-    var div2_m = distance[m]
+    var div2_m = distance[m] //v2에서 m까지
     fun check(one:Int,two:Int,three:Int):Int{
         if (one == iNF || two ==iNF || three == iNF)
             return iNF
